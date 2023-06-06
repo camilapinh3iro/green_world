@@ -229,3 +229,20 @@ html ::-webkit-scrollbar-track {
 .beneficiarie__name{
     font-size: 1.25rem;
 }
+
+.navigation-options{
+display: none;
+    align-items: center;
+    gap: 90px;
+}
+
+.option a:hover{
+    background-color: white;
+    padding-left: 0px;
+}
+
+.testee{
+        background-color: rgba(64, 141, 123, 0.4);
+}
+
+

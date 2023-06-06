@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/reset_two.css">
     <link rel="stylesheet" href="./css/variables.css">
 
+    <script src="./js/menu.js" defer></script>
+
     <script src="https://kit.fontawesome.com/56adc94ecd.js" crossorigin="anonymous"></script>
     <title>Todos os beneficiados</title>
 </head>
@@ -47,10 +49,26 @@
                             <img src="./img/helps_icon.png" alt="Image list">
                             <span class="navigation-field__name">Ajudas</span>
                         </a></li>
-                    <li class="navigation-field"><a href="#">
+                    <li onclick="changeState('.teste', '.navigation-field')" class="navigation-field"><a href="#">
                             <img src="./img/volunteer-beneficiarie_icon.png" alt="Image people">
                             <span class="navigation-field__name">Voluntários</span>
-                        </a></li>
+                        </a>
+
+                        <ul class="teste navigation-options">
+                            <li class="option">
+                                <a href="#">
+                                    <span class="option__text">Solicitações voluntários</span>
+                                </a>
+                            </li>
+                            <li class="option">
+                                <a href="#">
+                                    <span class="option__text">Todos os voluntários</span>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </li>
                     <li class="navigation-field"><a href="#">
                             <img src="./img/volunteer-beneficiarie_icon.png" alt="Image home">
                             <span class="navigation-field__name">Beneficiados</span>

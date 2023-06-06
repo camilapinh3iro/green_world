@@ -11,7 +11,7 @@ answers.forEach((answer) => {
 const handleIconClick = function () {
   answers.forEach((answer, index) => {
     console.log(index);
-    answer.classList.add("block");
+    answer.classList.add("flex");
     // answers[index].children.add("block");
   });
 };
