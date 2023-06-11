@@ -1,0 +1,314 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    height: 10vh;
+
+}
+
+.container-image-log-out {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.close__button {
+    grid-area: close;
+    place-self: start start;
+    padding-left: 30px;
+}
+
+.create-help__title {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.beneficiarie-content__title,
+.volunteer-content__title,
+.seed-content__title {
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.beneficiarie-content__selected{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#create-help {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 30px 100px 50px 100px;
+}
+
+.beneficiarie-content__list,
+.seed-content__list,
+.volunteer-content__list {
+    box-shadow: 1px 1px 10px rgba(169, 169, 169, 0.35);
+    border-radius: 10px;
+    width: 330px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 18px 30px;
+    overflow-y: auto;
+}
+
+.volunteer-content,
+.seed-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.seed-content__all,
+.volunteer-content__all,
+.seed-content__selected,
+.volunteer-content__selected {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 330px;
+    height: 480px;
+}
+
+.title__list {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.beneficiarie-selected__title{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.buttons-content__create-and-clean {
+    display: flex;
+    gap: 60px;
+}
+
+
+.button__icon {
+    color: var(--section-background-color);
+    font-size: 3rem;
+}
+
+.include__button,
+.remove__button {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(169, 169, 169, 0.35);
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.create__button {
+    background-color: #318ACA;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.clean__button {
+    background-color: #FFCF23;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.search-field-content {
+    position: relative;
+    align-self: flex-end;
+}
+
+.search-field__input {
+    box-shadow: 1px 1px 10px rgba(169, 169, 169, 0.35);
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 45px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.beneficiarie-selected__input{
+    box-shadow: 1px 1px 10px rgba(169, 169, 169, 0.35);
+    width: 330px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.information__title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.information{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.information__value{
+    font-size: 1.188rem;
+    font-weight: 400;
+}
+
+.beneficiarie-content__address, 
+.beneficiarie-content__information{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beneficiarie__address, 
+.beneficiarie__information{
+    display: flex;
+    gap: 8px;
+}
+
+#search-field__icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.volunteer__list, 
+.beneficiarie__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.seed__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seed__name-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D2CFCF;
+    padding-bottom: 15px;
+
+}
+
+.volunteer__name-city{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #D2CFCF;
+    padding-bottom: 5px;
+}
+
+.volunteer__city{
+    color: #AEA3A3;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.volunteer__name, 
+.seed__name{
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.seed__icon{
+    height: 15px;
+    width: 15px;
+}
+
+.buttons-content{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.add{
+    rotate: 180deg;
+}
+
+.beneficiarie-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.beneficiarie__list-selected{
+    display: flex;
+    gap: 100px;
+}
+
+.beneficiarie-information{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+}
+
+.help-information{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+}
+
+.beneficiarie__comments{
+    max-width: 30vw;
+}
+
+.date__input{
+    width: 210px;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 5px;
+    font-family: Montserrat, sans-serif;
+    border: 1px solid #000;
+}
+
+.seeds-lists, 
+.volunteers-lists{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
